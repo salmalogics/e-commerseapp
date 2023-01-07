@@ -1,0 +1,206 @@
+<!--Changing the number in the column_# class changes the number of columns-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL PRODUCTS</title>
+    
+
+    <link rel="stylesheet" href="styleproduct.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+        body {
+          font-family: Arial;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        form.search input[type=text] {
+          padding: 10px;
+          font-size: 17px;
+          border: 1px solid grey;
+          float: left;
+          width: 90%;
+          background: #f1f1f1;
+          border-radius: 10px;
+        }
+        
+        form.search button {
+          float: left;
+          
+          padding: 10px;
+          background: #2196F3;
+          color: white;
+          font-size: 17px;
+          border: 01px solid grey;
+          border-left: none;
+          cursor: pointer;
+          border-radius: 80%;
+        }
+        
+        form.search button:hover {
+          background: #0b7dda;
+        }
+        
+        form.search::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        </style>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="navbar ">
+          <div class="logo">
+            <a href="index.html"><img src="assets/images/icon.png" alt="ABC-Store" width="100px" /></a>
+          </div>
+          <!-- <nav class="navbar navbar-expand-lg navbar-light bgfa-pull-right">
+            <ul id="MenuItems">
+              <li><a href="#" style="text-decoration:none;">Home</a></li>
+              
+              <li><a href="#"style="text-decoration:none;">Products</a></li>
+              <li><a href="#"style="text-decoration:none;">About</a></li>
+              <li><a href="#"style="text-decoration:none;">Contact</a></li>
+              <li><a href="#"style="text-decoration:none;">Account</a></li>
+
+            </ul>
+
+          </nav> -->
+
+          <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
+          <!-- <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" /> -->
+        </div>
+      </div>
+
+      <!-- -----search---- -->
+              
+        <div class="container">
+
+        
+              <!-- The form -->
+              <form class="search" action="#">
+              <input type="text" placeholder="Search here ..." name="search">
+              <button type="submit" class="button" ><i class="fa fa-search"></i></button>
+              </form>
+        <!-- -----end--- -->
+
+        </div>
+
+      <!-- <div class="container">
+        <div class="row row-2">
+          <h2 style="margin-top: 20Px;color: teal;"><b>All Products</b></h2>
+          <select style="width: 100%; margin-left: 750px; margin-top: -30px;">
+            <option value="">Filters</option>
+            <option value="">Price</option>
+            <option value="">Rating</option>
+            <option value="">Discount</option>
+            <option value="">Combo offers</option>
+          </select>
+        </div> -->
+
+
+
+
+
+	<div id="wrap">
+	<div id="columns" class="columns_4">
+  <figure>
+  <img src="assets/images/img1.png">
+	<figcaption>Camon camera </figcaption>
+    <span class="price">$4000</span>
+    <a class="button" href="#" onclick="Addtocart()">ADD TO CART</a>
+	</figure>
+	
+	<figure>
+	<img src="assets/images/img2.png">
+	<figcaption>Head phone</figcaption>
+    
+    <span class="price">$299</span>
+    <a class="button" href="#" >ADD TO CART</a>
+	</figure>
+	
+  <figure>
+	<img src="assets/images/img3.png">
+	<figcaption>Watch</figcaption>
+    <span class="price">$600</span>
+    <a class="button" href="#">ADD TO CART</a>
+	</figure>
+  
+	<figure>
+	<img src="assets/images/img4.png">
+	<figcaption>Vitmin c serum</figcaption>
+    <span class="price">$440</span>
+    <a class="button" href="#">ADD TO CART</a>
+	</figure>
+	
+   <figure>
+	 <img src="assets/images/img12.png">
+	<figcaption>Strawberry</figcaption>
+    <span class="price">$300</span>
+    <a class="button" href="#">ADD TO CART</a>
+	</figure>
+	
+   <figure>
+	 <img src="assets/images/img11.png">
+	<figcaption>Iphone </figcaption>
+     <span class="price">$30000</span>
+     <a class="button" href="#">ADD TO CART</a>
+	</figure>
+  
+	<figure>
+	<img src="assets/images/img7.png">
+	<figcaption>Abc makeup kit</figcaption>
+    <span class="price">$44</span>
+    <a class="button" href="#">ADD TO CART</a>
+	</figure>	
+  
+   <figure>
+	<img src="assets/images/img8.png">
+	<figcaption>Sunglass</figcaption>
+     <span class="price">$800</span>
+     <a class="button" href="#">ADD TO CART</a>
+	</figure>
+  
+    <figure>
+	<img src="assets/images/img9.png">
+    <figcaption>Niva Creams</figcaption>
+      <span class="price">$350</span>
+      <a class="button" href="#">ADD TO CART</a>
+	</figure>	
+
+    <figure>
+        <img src="assets/images/img10.png">
+        <figcaption>Nike sports shoes</figcaption>
+          <span class="price">$400</span>
+          <a class="button" href="#">ADD TO CART</a>
+          
+        </figure>
+</div>
+
+
+<script>
+    function Addtocart(id)
+    {
+    var name = document.getElementById('name').value;
+     sessionStorage.setItem("name",name); 
+    
+    }
+    </script>
+
+</body>
+
+
+
+</html>
